@@ -12,6 +12,8 @@ class App < Sinatra::Base
     @piglatin = PigLatinizer.new
     #binding.pry
     @latin = @piglatin.piglatinize(code)
+    @piglatin = Piglatinizer.new
+    @latin = piglatin.piglatinize(code)
     erb :piggy_page
   end
 end
